@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from googleapiclient.discovery import build
 import isodate
 from dateutil import parser
+import requests
+from bs4 import BeautifulSoup
 API_KEY = 'AIzaSyB-O6RzHQDjYHoJDZ_xccbrv9GPOZsWYtU'
 YOUTUBE = build(
     "youtube", "v3", developerKey = API_KEY)
