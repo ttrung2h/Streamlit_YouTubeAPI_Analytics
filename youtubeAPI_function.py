@@ -1,6 +1,6 @@
 import pandas as pd
 import requests
-from bs3 import BeautifulSoup
+from bs4 import BeautifulSoup
 class YouTubeAPI:
     '''
         Class include function for crawling data from youtube such as: channel,video,comment
