@@ -143,7 +143,6 @@ def main():
             for playlist_id in list_playlistID:
                 list_video_id = list_video_id + YouTubeAPI.get_video_ids(YOUTUBE,playlist_id)
             st.write(f'Total Number Video in {number_channel} channels: {len(list_video_id)}')
-            st.snow()
             # Get video df from list video
             video_stats_df = pre_processing_video_stats(YouTubeAPI.get_video_stats(YOUTUBE,list_video_id))
             st.write(video_stats_df.head())
