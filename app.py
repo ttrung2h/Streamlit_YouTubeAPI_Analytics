@@ -11,7 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 API_KEY = 'AIzaSyB-O6RzHQDjYHoJDZ_xccbrv9GPOZsWYtU'
 YOUTUBE = build(
-    "youtube", "v3", developerKey = API_KEY)
+    "youtube", "v3", developerKey = API_KEY, cache_discovery=False)
 
 
 def bar_loading():
